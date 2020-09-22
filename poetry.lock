@@ -16,7 +16,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.4.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Classes Without Boilerplate"
 name = "attrs"
 optional = false
@@ -52,7 +52,7 @@ colorama = ["colorama (>=0.4.3)"]
 d = ["aiohttp (>=3.3.2)", "aiohttp-cors"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "The Blis BLAS-like linear algebra library, as a self-contained C-extension."
 name = "blis"
 optional = false
@@ -63,7 +63,7 @@ version = "0.4.1"
 numpy = ">=1.15.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Super lightweight function registries for your library"
 name = "catalogue"
 optional = false
@@ -71,7 +71,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
 version = "1.0.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Python package for providing Mozilla's CA Bundle."
 name = "certifi"
 optional = false
@@ -79,7 +79,7 @@ python-versions = "*"
 version = "2020.6.20"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Universal encoding detector for Python 2 and 3"
 name = "chardet"
 optional = false
@@ -104,7 +104,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.4.3"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Manage calls to calloc/free through Cython"
 name = "cymem"
 optional = false
@@ -112,7 +112,7 @@ python-versions = "*"
 version = "2.0.3"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "serialize all of python"
 name = "dill"
 optional = false
@@ -123,7 +123,7 @@ version = "0.3.2"
 graph = ["objgraph (>=1.7.2)"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "English multi-task CNN trained on OntoNotes. Assigns context-specific token vectors, POS tags, dependency parse and named entities."
 name = "en_core_web_sm"
 optional = false
@@ -137,8 +137,9 @@ spacy = ">=2.3.0,<2.4.0"
 reference = ""
 type = "url"
 url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz#egg=en_core_web_sm==2.3.1"
+
 [[package]]
-category = "main"
+category = "dev"
 description = "Internationalized Domain Names in Applications (IDNA)"
 name = "idna"
 optional = false
@@ -158,7 +159,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-black-multipy", "pytest-cov", "pygments"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "An implementation of JSON Schema validation for Python"
 name = "jsonschema"
 optional = false
@@ -176,7 +177,7 @@ format = ["idna", "jsonpointer (>1.13)", "rfc3987", "strict-rfc3339", "webcolors
 format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator (>0.1.0)", "rfc3339-validator"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "A python module for English lemmatization and inflection."
 name = "lemminflect"
 optional = false
@@ -195,7 +196,7 @@ python-versions = ">=3.5"
 version = "8.5.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Cython bindings for MurmurHash"
 name = "murmurhash"
 optional = false
@@ -227,7 +228,7 @@ python-versions = "*"
 version = "0.4.3"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "NumPy is the fundamental package for array computing with Python."
 name = "numpy"
 optional = false
@@ -255,7 +256,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.8.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "The smartest command line arguments parser in the world"
 name = "plac"
 optional = false
@@ -274,7 +275,7 @@ version = "0.13.1"
 dev = ["pre-commit", "tox"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Cython hash table that trusts the keys are pre-hashed"
 name = "preshed"
 optional = false
@@ -294,7 +295,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.9.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Package for creating data pipelines with chain functional programming"
 name = "pyfunctional"
 optional = false
@@ -317,7 +318,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "2.4.7"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Persistent/Functional/Immutable data structures"
 name = "pyrsistent"
 optional = false
@@ -355,7 +356,7 @@ python-versions = "*"
 version = "2020.7.14"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "ReplaCy = spaCy Matcher + pyInflect. Create rules, correct sentences."
 name = "replacy"
 optional = false
@@ -368,7 +369,7 @@ lemminflect = "0.2.1"
 pyfunctional = ">=1.2.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Python HTTP for Humans."
 name = "requests"
 optional = false
@@ -386,7 +387,7 @@ security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
 socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -394,7 +395,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "1.15.0"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Industrial-strength Natural Language Processing (NLP) in Python"
 name = "spacy"
 optional = false
@@ -431,7 +432,7 @@ lookups = ["spacy-lookups-data (>=0.3.2,<0.4.0)"]
 th = ["pythainlp (>=2.0)"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Modern high-performance serialization utilities for Python"
 name = "srsly"
 optional = false
@@ -439,7 +440,7 @@ python-versions = "*"
 version = "1.0.2"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Pretty-print tabular data"
 name = "tabulate"
 optional = false
@@ -450,7 +451,7 @@ version = "0.8.7"
 widechars = ["wcwidth"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Practical Machine Learning for NLP"
 name = "thinc"
 optional = false
@@ -487,7 +488,7 @@ python-versions = "*"
 version = "0.10.1"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Fast, Extensible Progress Meter"
 name = "tqdm"
 optional = false
@@ -514,7 +515,7 @@ python-versions = "*"
 version = "3.7.4.3"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 name = "urllib3"
 optional = false
@@ -527,7 +528,7 @@ secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0
 socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "A lightweight console printing and formatting toolkit"
 name = "wasabi"
 optional = false
@@ -543,7 +544,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "df24a2b9f9f7ed29dc1de91ca714a9279b4a57f482fdd3ea3cb74f3d837d829b"
+content-hash = "59bd7c94df39caf59a39d3ab004a2501b435da967e020d5d575d077f9894f43a"
 lock-version = "1.0"
 python-versions = "^3.8"
 
