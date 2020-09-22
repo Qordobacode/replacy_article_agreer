@@ -21,7 +21,12 @@ match_dict = {
     },
     "overlap": {
         "patterns": [{"LOWER": "problem"}, {"LOWER": "issue"}],
-        "suggestions": [[{"TEXT": "whatever"}]],
+        "suggestions": [[{"TEXT": "issue"}]],
+        "tests": {"positive": [], "negative": []},
+    },
+    "when-in-match": {
+        "patterns": [{"LOWER": "problems"}, {"LOWER": "issue"}],
+        "suggestions": [[{"LOWER": "an"}, {"PATTERN_REF": -1}]],
         "tests": {"positive": [], "negative": []},
     },
 }
@@ -55,5 +60,15 @@ def test_with_filtering():
     span = replaCy(orig)[0]
     replacement = span._.suggestions[0]
     assert (
-        orig.replace(span.text, replacement) == "This big whatever."
+        orig.replace(span.text, replacement) == "This big issue."
     ), "Respects span filtering"
+
+
+def test_works_in_match():
+    orig = "This is a problems issue."
+    span = replaCy(orig)[0]
+    replacement = span._.suggestions[0]
+    print(span._.match_name)
+    assert (
+        orig.replace(span.text, replacement) == "This is an issue."
+    ), "Fixes when article is in match"
