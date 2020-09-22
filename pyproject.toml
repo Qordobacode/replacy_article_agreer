@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "replacy-article-agreer"
-version = "0.2.1"
+version = "0.2.2"
 description = "A replaCy component to manage indirect article agreement, that is, to deal with making \"a\" and \"an\" be correct so you don't have to think about them in your matches."
 authors = ["Sam Havens <sam.havens@qordoba.com>"]
 license = "MIT"
