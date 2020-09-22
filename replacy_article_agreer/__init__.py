@@ -10,12 +10,21 @@ __version__ = "0.1.0"
 inflector = inflect.engine()
 
 
+class ReplacyPipelineOrderError(RuntimeError):
+    pass
+
+
 class ArticleAgreer:
     def __init__(self, name="ArticleAgreer"):
         self.name = name
 
     @staticmethod
     def _remove_article_prefix_with_whitespace(text: str):
+        if not isinstance(text, str):
+            raise ReplacyPipelineOrderError(
+                "ArticleAgreer replaCy component must be added after joiner component\
+                in order to operate on text suggestions"
+            )
         if text.startswith("a "):
             return text[2:]
         elif text.startswith("an "):
