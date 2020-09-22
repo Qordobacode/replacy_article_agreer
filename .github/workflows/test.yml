@@ -1,0 +1,28 @@
+name: Lint and Test
+on: push
+
+jobs:
+  lint:
+    name: Lint with Black
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "lgeiger/black-action@master"
+        with:
+          args: ". --check"
+  pytest:
+    name: Test with PyTest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+          python_version: 3.8
+          poetry_version: 1.0.10
+          args: install
+      - name: Run pytest
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+          python_version: 3.8
+          poetry_version: 1.0.10
+          args: run python -m pytest
