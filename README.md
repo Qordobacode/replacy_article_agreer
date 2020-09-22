@@ -33,3 +33,7 @@ aa = ArticleAgreer()
 replaCy.add_pipe(filter_spans, name="filter_spans", before="joiner")
 replaCy.add_pipe(aa, name="article_agreer", after="joiner")
 ```
+
+## Developing
+
+The CI/CD in this project is great. GitHub Actions run linting and tests on any PR. If you merge into master, [release-drafter](https://github.com/marketplace/actions/release-drafter) drafts a new release based on PR commits and tags (e.g. if the PR is tagged `feature` and `minor` it will create a minor version bump with the changes labeled as Features).
